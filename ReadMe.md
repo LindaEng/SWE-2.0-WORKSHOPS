@@ -1,4 +1,4 @@
 ## Objectives
 
-    ** What are we learning today?
-    **1.** 
+What are we learning today?
+    
