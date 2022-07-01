@@ -20,8 +20,8 @@ What are we learning today?
     -Scalable - we can re-use routes for multiple and various situations
     -Easy to read and understand
 
-- RESTful pattern
-    1.verbs 
+- RESTful pattern<br>
+    - 1.verbs <br>
    
     verbs - http methods
     Create - .post
@@ -31,9 +31,9 @@ What are we learning today?
 
     app.verb
 
-    2.nouns - only reserved for the url 
+    - 2.nouns - only reserved for the url <br>
 
-     ex: Restful
+    - ex: Restful<br>
     app.get('/dogs/', async (req, res, next) => {
         try {
         res.send('arf');
@@ -42,7 +42,7 @@ What are we learning today?
         }
     });
 
-    ex: NOT RESTFUL
+    - ex: NOT RESTFUL<br>
     app.get('/get-dogs/', async (req, res, next) => {
         try {
         res.send('arf');
@@ -51,7 +51,7 @@ What are we learning today?
         }
     });
 
-    3. broad -> specific
+    - 3. broad -> specific <br>
 
     app.get('/animals/dogs/', async (req, res, next) => {
         try {
