@@ -25092,11 +25092,11 @@ parcelHelpers.export(exports, "App", ()=>App
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _demo = require("./Demo");
+var _demoDefault = parcelHelpers.interopDefault(_demo);
 class App extends _reactDefault.default.Component {
     render() {
-        return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
-            children: "hello, world"
-        }, void 0, false, {
+        return /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_demoDefault.default, {}, void 0, false, {
             fileName: "src/App.js",
             lineNumber: 7,
             columnNumber: 13
@@ -25109,7 +25109,100 @@ class App extends _reactDefault.default.Component {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Demo":"1MFuD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"1MFuD":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a3c7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a3c7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _test = require("./Test");
+var _testDefault = parcelHelpers.interopDefault(_test);
+//when you create a class component, you are create a child class from the parent class React.Component
+class Demo extends _reactDefault.default.Component {
+    constructor(){
+        super();
+        this.state = {
+            color: 'Blue',
+            names: [
+                'JB',
+                'Jen',
+                'Getu',
+                'etc'
+            ],
+            counter: 0
+        };
+    }
+    increment() {
+        this.setState(this.state.counter + 1);
+    }
+    render() {
+        //Where you will write your JSX
+        return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                    children: "HELLOOO WORLD!!!"
+                }, void 0, false, {
+                    fileName: "src/Demo.js",
+                    lineNumber: 24,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                    children: this.state.color
+                }, void 0, false, {
+                    fileName: "src/Demo.js",
+                    lineNumber: 25,
+                    columnNumber: 17
+                }, this),
+                this.state.names.map((name)=>{
+                    return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                        children: name
+                    }, void 0, false, {
+                        fileName: "src/Demo.js",
+                        lineNumber: 28,
+                        columnNumber: 28
+                    }, this);
+                }),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV(_testDefault.default, {
+                    counter: this.state.counter,
+                    color: this.state.color
+                }, void 0, false, {
+                    fileName: "src/Demo.js",
+                    lineNumber: 32,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("button", {
+                    onClick: this.increment,
+                    children: "Click Me"
+                }, void 0, false, {
+                    fileName: "src/Demo.js",
+                    lineNumber: 33,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Demo.js",
+            lineNumber: 23,
+            columnNumber: 13
+        }, this);
+    }
+}
+//you must export the class using export default
+exports.default = {
+    Demo
+};
+
+  $parcel$ReactRefreshHelpers$a3c7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./Test":"8zrkr"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -25259,6 +25352,56 @@ function registerExportsForReactRefresh(module) {
     }
 }
 
-},{"react-refresh/runtime":"786KC"}]},["kn9T2","7nZVA","8lqZg"], "8lqZg", "parcelRequire9d29")
+},{"react-refresh/runtime":"786KC"}],"8zrkr":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8d59 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$8d59.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+class Test extends _reactDefault.default.Component {
+    constructor(props){
+        super(props);
+    }
+    render() {
+        return /*#__PURE__*/ _jsxDevRuntime.jsxDEV("div", {
+            children: [
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("h1", {
+                    children: this.props.counter
+                }, void 0, false, {
+                    fileName: "src/Test.js",
+                    lineNumber: 11,
+                    columnNumber: 17
+                }, this),
+                /*#__PURE__*/ _jsxDevRuntime.jsxDEV("p", {
+                    children: this.props.color
+                }, void 0, false, {
+                    fileName: "src/Test.js",
+                    lineNumber: 12,
+                    columnNumber: 17
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "src/Test.js",
+            lineNumber: 10,
+            columnNumber: 13
+        }, this);
+    }
+}
+exports.default = {
+    Test
+};
+
+  $parcel$ReactRefreshHelpers$8d59.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["kn9T2","7nZVA","8lqZg"], "8lqZg", "parcelRequire9d29")
 
 //# sourceMappingURL=index.975ef6c8.js.map
