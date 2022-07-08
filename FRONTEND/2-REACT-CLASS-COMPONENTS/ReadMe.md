@@ -1,7 +1,8 @@
 # React Class Components
 
 ## Objectives
-- What is a react class component?
+- Review of what react components are.
+- What is a react Class component?
 - Why do we need to learn how to write class components?
 - what is this.state
 - how to update state
