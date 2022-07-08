@@ -32,7 +32,7 @@ Hexidecimal values is a base 16 system (0-9A-F) used to simplify how binary is r
 
 Binary is a base 2 (0 and 1) and is used to write digital data such as computer processor instructions used every day computing purposes.
 
-A -> Encode -> 1A=
+A -> Encode -> 1A= <br>
 B -> Encode -> 2B=
 
 ** Encoding is not the safest way to protect data because it is easily decoded **
@@ -99,7 +99,7 @@ endpoint - POST
 
 
 - consider this situation:
-user1: {username: 'user1', password: 'pW123'}
+user1: {username: 'user1', password: 'pW123'} <br>
 user2: {username: 'user2', password: 'pW123'}
 
 ** The two users are going to produce the same hashed string for their passwords ** <- not safe
@@ -107,6 +107,10 @@ user2: {username: 'user2', password: 'pW123'}
 ** Ideally, you always want sensitive information to be stored as random and unique as possible **
 
 ## Salting 
+
+- Salting is an extra preliminary step prior to hashing plaintext into our hashing function. Salting is ideally used in situations where two or more users may have identical sensitive information(think same password)
+
+Salt sequence:
 
 -user1
 - plain text (ex: pW123)-> salting plain text pW123$5rt -> hashing function (pW123$5rt) -> hashed string 
