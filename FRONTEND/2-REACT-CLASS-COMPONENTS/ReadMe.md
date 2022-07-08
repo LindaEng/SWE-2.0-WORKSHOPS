@@ -42,3 +42,19 @@
 //1. Counter with an increment + decrement button, the counter value can be another component 
 
 //2. To-do list where you type in a text field, and the task will render on the screen
+
+
+
+1. create a new class component in a separte file.
+
+2. pay attention to the synax 
+
+3. exporting / importing correctly
+
+4. Practice state in class components
+    - how to access state within the class component -> rendering from state
+    - practice updating state 
+
+5. Practice passing down props from one class component to:
+    - another class component
+    - functional component
