@@ -9,7 +9,6 @@ const port = 8080;
 //Finally, let's make sure we move the secrte to the .env file
 const jwt = require('jsonwebtoken');
 require('dotenv').config();
-
 const { JWT_SECRET = '234709asefiaserh181349' } = process.env;
 
 const bcrypt = require('bcrypt');
@@ -18,8 +17,6 @@ const SALT_COUNT = 5;
 const {User} = require('./db/User');
 const { sequelize } = require('./db/db');
 
-
-
 sequelize.sync({ force: false });
 
 app.use(cookieParser());  //to be able to access req.cookies
@@ -27,6 +24,7 @@ app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 
+///////////////////////// routes /////////////////////////
 
 //registering a user - attaching a token
 app.post('/register', async (req, res, next) => {
@@ -42,11 +40,9 @@ app.post('/register', async (req, res, next) => {
 //login - always use post for the sake of demoing we can use get
 app.get('/user', async (req, res, next) => {
   try {
- 
-    } else {
-      res.sendStatus(401);
-    }  
-  } catch (error) {
+    
+  }   
+   catch (error) {
     console.error(error);
     next(error)
   }
@@ -61,6 +57,8 @@ app.get('/subscribers', async (req, res, next) => {
     console.error(err)
   }
 })
+
+///////////////////////// routes /////////////////////////
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
