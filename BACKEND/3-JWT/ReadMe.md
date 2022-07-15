@@ -19,6 +19,12 @@
     - JWT JSON WEB TOKEN - is a way to securely transmit information between parties as a JSON object. JWT is mainly used for authentication (to verify a user) and for authorization ex: Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token.
 
 - How does it work?
+    -sequencing: 
+        - client ----- login credentials ----> Server(if credits are valid)<br>
+                 <---- Signed JWT ------------<br>
+        - client ----- request with JWT ----> Server(if JWT is valid (is the user))<br>
+                 <---- response ------------<br>  
+                                                                            
     - we can create a JWT by using .sign(payload, secret) 
     - we also have the ability to decode the token to retrieve the original payload data by using .verify(token, secret)
 
