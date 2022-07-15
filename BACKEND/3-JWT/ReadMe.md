@@ -20,13 +20,16 @@
 
 - How does it work?<br>
     -sequencing: <br>
-        - client ----- login credentials ----> Server(if credits are valid)<br>
-                 <---- Signed JWT ------------<br>
+        - client ----- login credentials ----> Server(if credits are valid) <br>
+                 <---- Signed JWT ------------   <br>
+
+        - now that the client is logged in -  
+
         - client ----- request with JWT ----> Server(if JWT is valid (is the user))<br>
-                 <---- response ------------<br>  
+                 <---- response ------------    <br>  
 
     - we can create a JWT by using .sign(payload, secret) 
-    - we also have the ability to decode the token to retrieve the original payload data by using .verify(token, secret)
+    - we also have the ability to decode the token to retrieve the original payload data by using .verify(token, secret) xxx.yyy.zzz -> {id: , username: }
 
 ## 3.2 - Environment Secrets
 - What is an environmental variable?
@@ -38,8 +41,8 @@ An environment variable is a variable whose value is set outside the program, 
     - First lets check your Enviornmental variables by typing printenv.
     - If you want to check a specific environment variable, you can do check it with command “echo $variable_name” <br>
 
-    - Temporary:<br>
-        - in your terminal type export TEST_VARIABLE = test_variable
+    - Temporary:<br> // testing purposes
+        - in your terminal type export TEST_VARIABLE = test_variable //SCREAMING_SNAKE_CASE
         - printenv (check to see if its there!)
         - And then close the terminal window and open another one to check out if the set variable has disappeared or not.
     
@@ -63,7 +66,14 @@ An environment variable is a variable whose value is set outside the program, 
         - make sure you use SCREAMING_SNAKE_CASE
         - make sure you add the .env file to your .gitignore so you do not upload any sensitive information to github.
 
+    - to use Enviornmental Variables in your project
+        - make sure your npm install dotenv
 
+    - nano ~/.zshrc
+    - make your changes
+    - source ~/.zshrc
+    - printenv 
+    - Permanent Enviornement Variable
 
 ## 3.4 - DEMO Login + Register - JWT
 - We'll demo how to utilize a JWT when registering a new user + logging in
