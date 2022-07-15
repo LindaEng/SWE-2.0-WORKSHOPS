@@ -18,7 +18,7 @@
 - What is JWT?
     - JWT JSON WEB TOKEN - is a way to securely transmit information between parties as a JSON object. JWT is mainly used for authentication (to verify a user) and for authorization ex: Once the user is logged in, each subsequent request will include the JWT, allowing the user to access routes, services, and resources that are permitted with that token.
 
-- How does it work?
+- How does it work?<br>
     -sequencing: <br>
         - client ----- login credentials ----> Server(if credits are valid)<br>
                  <---- Signed JWT ------------<br>
