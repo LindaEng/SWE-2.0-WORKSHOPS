@@ -18,5 +18,5 @@
 
     - Auth0 - is an organisation, who manages Universal Identity Platform for web, mobile and IoT can handle any of them — B2C, B2B, B2E, or a combination.
 
-## OpenID Connect (OIDC)
+    ## OpenID Connect (OIDC)
     - OpenID Connect (OIDC) is an open authentication protocol that profiles and extends OAuth 2.0 to add an identity layer. OIDC allows clients to confirm an end user’s identity using authentication by an authorization server. Implementing OIDC on top of OAuth 2.0 creates a single framework that promises to secure APIs, mobile native applications and browser applications in a single, cohesive architecture.
